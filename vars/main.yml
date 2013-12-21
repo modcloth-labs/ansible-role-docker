@@ -1,0 +1,8 @@
+---
+docker:
+  graph_storage_dir: /mnt/docker
+  listen_addresses:
+  - unix://var/run/docker.sock
+  - tcp://127.0.0.1:4243
+  package_name: lxc-docker-0.7.2
+  debug: false

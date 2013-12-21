@@ -1,0 +1,28 @@
+---
+- name: create graph storage dir
+  file:
+    path={{ docker.graph_storage_dir }}
+    state=directory
+    mode=0700
+  tags: docker
+
+- name: install docker
+  apt:
+    name={{ docker.package_name }}
+    update_cache=yes
+    state=present
+  tags: docker
+
+- name: install docker defaults
+  template:
+    src=etc-default-docker.j2
+    dest=/etc/default/docker
+    mode=0644
+  tags: docker
+
+- name: start docker
+  service:
+    name=docker
+    state=started
+    enabled=yes
+  tags: docker
