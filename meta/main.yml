@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Dan Buch & Rafe Colton
+  description: An ansible role for the docker daemon
+  company: your company (optional)
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - precise
+    - raring
+  categories:
+  - development
+  - packaging
+  - system
+dependencies: []
