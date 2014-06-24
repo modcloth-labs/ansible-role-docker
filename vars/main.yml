@@ -4,5 +4,5 @@ docker:
   listen_addresses:
   - unix://var/run/docker.sock
   - tcp://127.0.0.1:4243
-  package_name: lxc-docker-0.7.2
+  package_name: lxc-docker-1.0.0
   debug: false
