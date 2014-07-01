@@ -4,7 +4,7 @@
 
 - name: add docker repository
   apt_repository:
-    repo: 'deb http://get.docker.io/ubuntu docker main'
+    repo: 'deb https://get.docker.io/ubuntu docker main'
     update_cache: yes
 
 - name: create graph storage dir
